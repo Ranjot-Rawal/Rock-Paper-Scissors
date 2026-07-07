@@ -1,0 +1,502 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+}
+
+body {
+    background-color: #0a0e1a;
+    font-family: 'Inter', sans-serif;
+    /* font-style: italic; */
+}
+
+.top {
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#rock-heading {
+    color: rgb(197, 202, 202);
+    font-size: 55px;
+}
+
+#paper-heading {
+    color: rgb(188, 188, 95);
+    font-size: 55px;
+}
+
+#scissors-heading {
+    color: aqua;
+    font-size: 55px;
+}
+
+#dot1 {
+    margin: 23px 0 0 0;
+    width: 15px;
+    height: 15px;
+    /* border: 2px solid rgb(255, 255, 255); */
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+#dot2 {
+    margin: 23px 0 0 0;
+    width: 15px;
+    height: 15px;
+    /* border: 2px solid rgb(255, 255, 255); */
+    border-radius: 50%;
+    background-color: #cae37c;
+}
+
+#top-para {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 4px;
+}
+
+.cards {
+    margin: 20px 20px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    /* display: grid; */
+    /* grid-template-columns: 2; */
+}
+
+.card-rock {
+    display: flex;
+    width: 23%;
+    height: 200px;
+    border-radius: 25px;
+    /* background-color: rgba(243, 232, 232, 0.09); */
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card-paper {
+    display: flex;
+    width: 23%;
+    height: 200px;
+    border-radius: 25px;
+    /* background-color: rgba(255, 215, 0, 0.18); */
+    background: rgba(212, 175, 55, 0.18);
+    border: 2px solid rgba(212, 175, 55, 0.4);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card-scissors {
+    display: flex;
+    width: 23%;
+    height: 200px;
+    border-radius: 25px;
+    /* background-color: rgba(30,144,255,0.15); */
+    background: rgba(59, 130, 246, 0.15);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(59, 130, 246, 0.35);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card-rock img {
+    height: 204px;
+    width: 207px;
+    object-fit: cover;
+}
+
+.left-rock {
+    flex: 1;
+    width: 50%;
+    height: 100%;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+}
+
+.right-rock span {
+    color: aqua;
+}
+
+.right-rock {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-rock h2 {
+    font-size: 30px;
+    color: rgb(255, 255, 255)
+}
+
+.left-paper img {
+    height: 213px;
+    width: 220px;
+    object-fit: fill;
+    margin: -6px 0 0 -14px;
+}
+
+.left-paper {
+    flex: 1;
+    width: 50%;
+    height: 100%;
+}
+
+.right-paper span {
+    color: rgb(53, 169, 53);
+}
+
+.right-paper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-paper h2 {
+    font-size: 30px;
+    color: rgb(188, 188, 95)
+}
+
+.left-scissors img {
+    height: 200px;
+    width: 200px;
+}
+
+.left-scissors {
+    flex: 1;
+    width: 50%;
+    height: 100%;
+}
+
+.right-scissors span {
+    color: yellow;
+}
+
+.right-scissors {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-scissors h2 {
+    font-size: 30px;
+    color: aqua;
+}
+
+.line-divider-1 {
+    height: 0px;
+    width: 90px;
+    border: 1px solid white;
+    margin: 30px 0 10px 0;
+}
+
+.line-divider-2 {
+    height: 0px;
+    width: 90px;
+    border: 1px solid yellow;
+    margin: 30px 0 10px 0;
+}
+
+.line-divider-3 {
+    height: 0px;
+    width: 90px;
+    border: 1px solid aqua;
+    margin: 30px 0 10px 0;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+.game-play {
+    border: 2px solid gold;
+    height: 250px;
+    width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#rock {
+    cursor: pointer;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+    border: 4px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+#paper {
+    cursor: pointer;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: rgba(212, 175, 55, 0.18);
+    border: 4px solid rgba(212, 175, 55, 0.4);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+#scissors {
+    cursor: pointer;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: rgba(59, 130, 246, 0.15);
+    backdrop-filter: blur(10px);
+    border: 4px solid rgba(59, 130, 246, 0.35);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.game-play img {
+    width: 124px;
+    height: 140px;
+    object-fit: cover;
+}
+
+#rock:hover {
+    transform: scale(1.09);
+    opacity: 0.5;
+}
+
+#paper:hover {
+    transform: scale(1.09);
+    opacity: 0.5;
+}
+
+#scissors:hover {
+    transform: scale(1.09);
+    opacity: 0.5;
+}
+
+.names {
+    display: flex;
+    justify-content: center;
+    gap: 114px;
+}
+
+#iconrock {
+    color: rgb(197, 202, 202);
+}
+
+#iconpaper {
+    margin: 0 -14px 0 0;
+    color: rgb(188, 188, 95)
+}
+
+#iconscissors {
+    margin: 0 -14px 0 0;
+    color: aqua;
+}
+
+.choose-your-move {
+    margin: -26px 0 29px 0;
+    color: gold;
+    font-size: 20px;
+}
+
+.score-board {
+    margin: 0 auto;
+    height: 130px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    font-size: 2rem;
+    border: 2px solid rgb(46, 165, 42);
+    background-color: rgba(75, 213, 48, 0.1);
+}
+
+#user-score,
+#comp-score {
+    font-size: 4rem;
+}
+
+.players {
+    color: greenyellow;
+}
+
+.msg-box {
+    height: 50px;
+    width: 170px;
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    background-color: rgba(247, 15, 15, 0.2);
+    border-radius: 80px;
+}
+
+.won {
+    border: 2px solid rgb(230, 19, 230);
+    background-color: rgba(205, 19, 230, 0.2);
+}
+
+.lose {
+    background-color: rgba(34, 222, 197, 0.2);
+    border: 2px solid rgb(40, 172, 170);
+}
+
+.draw {
+    border: 2px solid red;
+    background-color: rgba(247, 15, 15, 0.2);
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 0 12px;
+    }
+
+    .top {
+        margin: 16px 0 0 0;
+        gap: 6px;
+    }
+
+    #rock-heading,
+    #paper-heading,
+    #scissors-heading {
+        font-size: 28px;
+    }
+
+    #dot1,
+    #dot2 {
+        width: 6px;
+        height: 6px;
+        margin: 8px 0 0 0;
+    }
+
+    #top-para {
+        font-size: 0.7rem;
+        letter-spacing: 2px;
+        margin-top: 4px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        margin: 20px 0 0 0;
+    }
+
+    .card-rock,
+    .card-paper,
+    .card-scissors {
+        width: 70%;
+        max-width: 340px;
+        height: 140px;
+        border-radius: 16px;
+    }
+
+    .card-rock img,
+    .card-paper img,
+    .card-scissors img {
+        height: 130px;
+        width: 130px;
+    }
+
+    .right-rock h2,
+    .right-paper h2,
+    .right-scissors h2 {
+        font-size: 20px;
+    }
+
+    .right-rock p,
+    .right-paper p,
+    .right-scissors p {
+        font-size: 0.75rem;
+    }
+
+    .game-play {
+        height: 400px;
+        display: flex;
+        width: 90%;
+        max-width: 360px;
+        padding: 20px 12px;
+        margin: 20px auto -30px auto;
+        border: none;
+    }
+
+    .choose-your-move {
+        font-size: 1 rem;
+        margin-bottom: 16px;
+    }
+
+    .icons {
+        /* flex: 1; */
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .mobile-view{
+        display: flex;
+        gap: 50px;
+    }
+
+    #rock,
+    #paper,
+    #scissors {
+        width: 80px;
+        height: 80px;
+    }
+
+    .game-play img {
+        width: 78px;
+        height: 85px;
+    }
+
+    .names {
+        flex: 1;
+        flex-direction: column;
+        /* margin-top: 10px; */
+        justify-content: center;
+        align-items: center;
+        gap: 108px;
+    }
+
+    #iconrock,
+    #iconpaper,
+    #iconscissors {
+        font-size: 1 rem;
+        margin: -18px 0 0 0;
+    }
+
+    .score-board {
+        width: 100px;
+        height: 100px;
+        padding: 12px 20px;
+        gap: 20px;
+    }
+
+    #user-score,
+    #comp-score {
+        font-size: 2.2rem;
+    }
+
+    .players {
+        font-size: 0.65rem;
+    }
+
+    .msg-box {
+        padding: 10px 24px;
+        font-size: 0.8rem;
+    }
+}

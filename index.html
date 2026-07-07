@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="top">
+        <h1 id="rock-heading">ROCK</h1>
+        <h1 id="dot1"></h1>
+        <h1 id="paper-heading">PAPER</h1>
+        <h1 id="dot2"></h1>
+        <h1 id="scissors-heading">SCISSORS</h1>
+    </div>
+    <p id="top-para">THE CLASSIC GAME OF CHOICES</p>
+
+    <div class="container">
+        <div class="cards">
+            <div class="card-rock">
+                <div class="left-rock"><img src="images/rock.png" alt=""></div>
+                <div class="right-rock">
+                    <h2>ROCK</h2>
+                    <p>Strong & Solid</p>
+                    <p class="line-divider-1"></p>
+                    <p>Crushes <span>Scissors</span></p>
+                </div>
+            </div>
+            <div class="card-paper">
+                <div class="left-paper"><img src="images/paper.png" alt=""></div>
+                <div class="right-paper">
+                    <h2>PAPER</h2>
+                    <p>Light & Flexible</p>
+                    <p class="line-divider-2"></p>
+                    <p>Wraps <span>Rock</span></p>
+                </div>
+            </div>
+            <div class="card-scissors">
+                <div class="left-scissors"><img src="images/scissors.png" alt=""></div>
+                <div class="right-scissors">
+                    <h2>SCISSORS</h2>
+                    <p>Sharp & Precise</p>
+                    <p class="line-divider-3"></p>
+                    <p>Cuts <span>Paper</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="game-play">
+        <div class="choose-your-move">CHOOSE YOUR MOVE</div>
+        <div class="mobile-view">
+            <div class="icons">
+                <div id="rock" class="choice">
+                    <img src="images/small-rock.png" alt="">
+                </div>
+                <div id="paper" class="choice">
+                    <img src="images/small-paper.png" alt="">
+                </div>
+                <div id="scissors" class="choice">
+                    <img src="images/small-scissors.png" alt="">
+                </div>      
+            </div>
+            <div class="names">
+                <p id="iconrock">ROCK</p>
+                <p id="iconpaper">PAPER</p>
+                <p id="iconscissors">SCISSORS</p>
+            </div>
+        </div>
+    </div>
+    <div class="score-board">
+        <div class="myscore">
+            <p id = "user-score" >0</p>
+            <p class="players">YOU</p>
+        </div>
+        <div class="compscore">
+            <p id ="comp-score">0</p>
+            <p class="players">COMP</p>
+        </div>
+    </div>
+    <div class="msg-box">
+        <p id = "msg">PLAY YOUR MOVE</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
